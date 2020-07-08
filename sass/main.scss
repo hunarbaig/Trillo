@@ -1,0 +1,16 @@
+@import "abstracts/varibles";
+
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+
+@import "components/sidebar";
+@import "components/gallery";
+@import "components/button";
+@import "components/recommended";
+@import "components/review";
+
+@import "layout/header";
+@import "layout/hotel-view";
+
+@import "pages/home";

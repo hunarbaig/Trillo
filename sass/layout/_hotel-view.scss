@@ -1,0 +1,98 @@
+.hotel-view {
+    background-color: var(--color-white);
+    flex: 1;
+}
+
+.overview {
+    display: flex;
+    align-items: center;
+    border-bottom: var(--line);
+
+    &__stars {
+        margin-right: auto;
+        display: flex;
+    }
+
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon,
+    &__icon--location {
+        height: 1.75rem;
+        width: 1.75rem;
+        fill: var(--color-primary);
+
+        &--location {
+            margin-right: .5rem;
+        }
+    }
+
+    &__rating {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        margin-left: 3rem;
+        padding: 0 2.2rem;
+        align-self: stretch;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--average {
+            font-size: 2.25rem;
+            font-weight: 300;
+        }
+
+        &--count{
+            font-size: .8rem;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.detail {
+    display: flex;
+    padding: 4.5rem;
+    font-size: 1.4rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+
+    @media only screen and (max-width: $bp-medium){
+        padding: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small){
+        flex-direction: column;
+    }
+
+    &__description {
+        background-color: var(--color-white);
+        box-shadow: var(--box-shadow-light);
+        padding: 3rem;
+        margin-right: 4.5rem;
+        flex: 0 0 60%;
+
+        @media only screen and (max-width: $bp-medium){
+            padding: 2rem;
+            margin-right: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            margin-right: 0;
+        }
+    
+    }
+
+    &__user {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
